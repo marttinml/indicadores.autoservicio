@@ -14,7 +14,7 @@
     $scope.colors = ['#CAA2DD','#9063CD','#71C5E8','#0568AE','#FFB81C','#EA7400','#009FDB'];
 
 
-    $scope.header = ['Canal','Ene','Feb','Mar','Abr','May','Jun','Jul','Ago','Sep','Oct','Nov','Dic'];
+    $scope.header = ['Canal','Ene','Feb','Mar','Abr','May','Jun','Jul','Ago','Sep','Oct'];
     $http.get("../../../1.json").success(function (data) { $scope.canalAccesorios = data; }).error(function (data) {console.log("there was an error"); });
     $http.get("../../../2.json").success(function (data) { $scope.canalPagoFactura = data; }).error(function (data) {console.log("there was an error"); });
     $http.get("../../../3.json").success(function (data) { $scope.canalRecargas = data; console.log(data); }).error(function (data) {console.log("there was an error"); });
